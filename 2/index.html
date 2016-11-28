@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+  <title>#Codevember - Archimedean Spiral and Two Audio Oscillator</title>
+  <meta name="description" content="#codevemeber 2 | Archimedean spiral with two audio oscillators" >
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<style>
+    canvas {z-index: 1; position: relative}
+    body { width: 100%; margin: 0px; overflow: hidden;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#111111+0,000000+100 */
+    background: #111111; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #111111 0%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #111111 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #111111 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    #note
+    {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      padding: 4px;
+      font-family: Tahoma;
+      color: #fff;
+      font-size: 11pt;
+      z-index: 2;
+    }
+    #click-to-start:hover
+    {
+      background: #000;
+    }
+    #click-to-start
+    {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -100px;
+      margin-top: -10px;
+      width: 200px;
+      height: 20px;
+      font-family: Tahoma;
+      color: #999;
+      background: #333;
+      font-size: 11pt;
+      padding: 10px;
+      z-index: 3;
+      text-align: center;
+      cursor: pointer;
+    }    
+</style>
+<body>
+    <canvas id="myCanvas" onclick="functionIndex = !functionIndex;"></canvas>
+    <div id="note">Click/tap to mute</div>
+    <div id="click-to-start">Click/tap to start</div>
+</body>
+<script src="script.js"></script>
+</body>
+</html>

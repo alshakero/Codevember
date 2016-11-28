@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+  <title>#Codevember - Simple Math Fan</title>
+  <meta name="description" content="See polar flower blooming before your eyes" >
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<style>
+    canvas {z-index: 1; position: relative}
+    body { width: 100%; margin: 0px; overflow: hidden;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#111111+0,000000+100 */
+    background: #111111; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #111111 0%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #111111 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #111111 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    #note
+    {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      padding: 4px;
+      font-family: Tahoma;
+      color: #fff;
+      font-size: 11pt;
+      z-index: 2;
+    }
+}    
+</style>
+<body>
+    <canvas id="myCanvas" onclick="functionIndex = !functionIndex;"></canvas>
+    <div id="note">Click/tap to change equation</div>
+</body>
+<script src="script.js"></script>
+</body>
+</html>

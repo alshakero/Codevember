@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="#Codevember 4 - Video-harvested data on HTMLCanvas">
+		
+  <!-- SEO --> 
+  <meta name="keywords" content="Codevember, javascript, phyrics, Proccessing, NodeJS, Video-harvested">
+  <meta name="author" content="Omar Alshaker">
+  <meta name="copyright" content="Copyright 2016 - Omar Alshaker" />
+ 
+		<!-- Robots -->
+		<meta name="robots" content="index, follow">
+		<meta name="location" content="Warsaw, Poland">
+		<link rel="icon" type="image/png" href="/images/favicon.ico" />
+
+		<!-- Facebook meta --> 
+		<meta property="og:image" content="https://www.omaralshaker.com/Codevember/4/fb-thumb.jpg">
+		<meta property="og:url" content="https://www.omaralshaker.com/Codevember/4/">
+		<meta property="og:title" content="#Codevember 4 - Drawing video-harvested data - Omar Alshaker">
+		<meta property="og:sitename" content="https://www.omaralshaker.com"/>
+		<meta name="description" content="A set of polygons were extracted from a video using OpenCV, then were drawn on HTMLCanvas and WebAudio API"/>
+
+		<!-- Twitter meta -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@alshakero">
+		<meta name="twitter:creator" content="@alshakero">
+		<meta name="twitter:title"  content="https://www.omaralshaker.com/Codevember/4/">
+		<meta name="twitter:description" content="A set of polygons were extracted from a video using OpenCV, then were drawn on HTMLCanvas and WebAudio API">
+		<meta name="twitter:image:src" content="https://www.omaralshaker.com/Codevember/4/fb-thumb.jpg">
+
+		<!-- GOOGLE + Share -->
+		<meta itemprop="name" content="Omar Alshaker - LyricArt">
+		<meta itemprop="description" content="A set of polygons were extracted from a video using OpenCV, then were drawn on HTMLCanvas and WebAudio APIt">
+		<meta itemprop="image" content="https://www.omaralshaker.com/Codevember/4/fb-thumb.jpg">
+
+
+		<title>#Codevember 4 - Video-harvested data on HTMLCanvas</title>
+
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+    <style>
+      body {
+        margin:0px;
+        background: #111;
+        text-align: center;
+      }
+      #click-to-start:active
+      {
+        background: #111;
+      }
+      a {color:#fff!important}
+      #click-to-start
+      {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -100px;
+        margin-top: -10px;
+        width: 200px;
+        font-family: Tahoma;
+        color: #eee;
+        background: #333;
+        font-size: 11pt;
+        padding: 10px;
+        z-index: 3;
+        text-align: center;
+        cursor: pointer;
+      }    
+      .fb-share-button
+      {
+        margin: 5px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>     
+      <div id="click-to-start">Initializing..</div>
+      <canvas id="canvas" width="1280" height="720" style="width: 100%; display: inline-block"/>
+    <script src="main.max.js"></script>
+  </body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1431386670414518";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56638680-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
