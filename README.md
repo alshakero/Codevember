@@ -5,7 +5,7 @@ Some Codevember experiments
 See polar flower blooming before your eyes
 https://alshakero.github.io/Codevember/1/
 
-## 2- Archimedean Spiral and Two Audio Oscillator
+## 2- Archimedean Spiral and Two Audio Oscillators
 Archimedean spiral with two binural audio oscillators
 https://alshakero.github.io/Codevember/2
 
